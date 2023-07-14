@@ -900,7 +900,7 @@ h1,h3{
         flex-direction: column;
         justify-content: center;
         align-items:center;
-        width: 350px;
+        width: 40%;
         position: absolute;
         top: 0;
         background-color: transparent;
@@ -920,7 +920,7 @@ h1,h3{
         flex-direction: column;
         justify-content: center;
         align-items:center;
-        width: 350px;
+        width: 40%;
         position: absolute;
         top: 0;
         background-color: transparent;
@@ -935,11 +935,10 @@ h1,h3{
         height: 50px;
         position: absolute;
         top: 20px;
-        left: 400px;
+        left: 250px;
         
     }
 
-    
     .header .navbar_menu .navigation_bar{
         display: flex;
         flex-direction: column;
@@ -1208,5 +1207,31 @@ h1,h3{
     .services_container .services{
         width: 70%;
     }
+}
+
+@media only screen and (max-width:500px){
+    .projects_container .set2{
+        transform: translateX(100px);
+    }
+    
+.projects_container .set_effect{
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 1s,opacity 1.5s;
+}
+.left_side{
+    transform: translateX(-100px);
+}
+.left_side_effect{
+    transform: translateX(0);
+}
+
+.right_side{
+    transform: translateX(100px);
+}
+.right_side_effect{
+    transform: translateX(0);
+}
+
 }
 
